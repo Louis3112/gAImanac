@@ -1,7 +1,7 @@
 import gAImanacIcon from "./assets/gAImanac_logo.svg";
 import profilePict from "./assets/profile_pict.svg";
 import aiIcon from "./assets/ai_star.svg";
-import { PanelRight, MessageSquare, CircleHelp, Settings, LogOut, Info, Send } from 'lucide-react';
+import { PanelRight, MessageSquare, CircleHelp, Settings, LogOut, Info, Send, Trash } from 'lucide-react';
 import { Button } from "./components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -11,22 +11,21 @@ const App = () => {
 
       {/* Left Sidebar */}
       <aside className="w-[280px] h-screen p-6 flex flex-col space-y-6 justify-between bg-[#09090B]">
+        
+        {/* Sidebar Header */}
         <div className="flex items-center justify-between w-full">
-
-          {/* gAImanac logo and name */}
+          {/* g AImanac logo and name */}
           <div className="flex gap-3">
             <img src={gAImanacIcon} alt="gAImanac Icon" className="w-6 h-6"/>
             <h1 className="text-xl text-white">gAImanac</h1>
           </div>
-
-          {/* sidebar button */}
+          {/* Sidebar button */}
           <Button className="cursor-pointer" variant={"ghost"} size={"sm"}>
             <PanelRight className="opacity-60"/>
           </Button>
-
         </div>
         
-        {/* navbar */}
+        {/* Navbar */}
         <nav className="flex flex-col grow items-start space-y-2 mx-4">
           
           {/* AI Chat */}
@@ -55,7 +54,7 @@ const App = () => {
           
         </nav>
 
-          {/* Upgrade Plan */}
+        {/* Upgrade Plan */}
         <div className="">
           <div className="bg-gradient-to-r from-blue-950 to-blue-800 text-white p-4 rounded-xl ">
             <img src={aiIcon} alt="AI Icon" className="mb-2" />
@@ -140,57 +139,78 @@ const App = () => {
         </div>
       </main>
 
-      {/* Left Sidebar */}
+      {/* Right Sidebar */}
       <aside className="w-[280px] h-screen p-6 flex flex-col space-y-8 justify-between bg-[#09090B]">
-        <div className="flex items-center justify-between w-full">
-
-          {/* gAImanac logo and name */}
-          <div className="flex gap-3">
-            <img src={gAImanacIcon} alt="gAImanac Icon" className="w-6 h-6"/>
-            <h1 className="text-xl text-white">gAImanac</h1>
-          </div>
-          {/* sidebar button */}
-          <button><span className="material-symbols-outlined mt-2 opacity-40 rounded-lg justify-end">dock_to_right</span></button>
+        
+        <div>
+          {/* Sidebar Header */}
+          <div className="flex justify-between mt-2">
+            <h1 className="text-xl text-white">History</h1>
+            <div className="px-3 py-1 rounded-md bg-[#27272A] text-white text-sm">
+              <p>3/25</p> {/* current/ max list */}
+            </div>
+          </div> 
+          <hr className="border-[#3F3F46] mt-5 w-full"/>
         </div>
         
-        {/* navbar */}
-        <nav className="flex flex-col grow items-start space-y-4 mx-4">
-          {/* AI Chat */}
-          <a href="#" className="flex items-center gap-3 mb-1 hover:text-[#1C398E] transition">
-          <span className="material-symbols-outlined text-lg">chat_bubble</span>
-          <span className="text-md">AI Chat</span>
-          </a>
-          {/* Updates & FAQ */}
-          <a href="#" className="flex items-center gap-3 text-md mb-8 hover:text-[#1C398E] transition">
-          <span className="material-symbols-outlined text-lg">help</span>
-          <span className="text-md">Updates & FAQ</span>
-          </a>
-          {/* Settings */}
-          <a href="#" className="flex items-center gap-3 text-md mb-2 hover:text-[#1C398E] transition">
-          <span className="material-symbols-outlined text-lg">settings</span>
-          <span className="text-md ">Settings</span>
-          </a>
-        </nav>
-
-          {/* Upgrade Plan */}
-        <div className="">
-          <div className="bg-gradient-to-r from-blue-950 to-blue-800 text-white p-4 rounded-xl ">
-            <img src={aiIcon} alt="AI Icon" className="mb-2" />
-            <h3 className="text-md mb-1">Upgrade Plan</h3>
-            <p className="text-xs opacity-70 mb-5">More access to the best models</p>
-            <div className="flex items-center justify-between">
-              <p className="text-xs">Rp 250.000 / month</p>
-              <button className="text-[#09090B] font-medium text-sm px-4 py-1 rounded-md bg-white">Get</button>
+        {/* List History */}
+        <ul className="flex flex-col grow space-y-4">
+          <li className="flex">
+            {/* Square */}
+            <label className="absolute w-6 h-6 border-2 rounded-sm cursor-pointer border-zinc-600 ">
+              <input type="checkbox" className="peer hidden" />
+              <div className="w-full h-full hover:bg-[#27272A] peer-checked:bg-[#E4E4E7] transition"></div>
+            </label>
+            
+            {/* Name game and question */}
+            <div className="flex flex-col text-white ml-10">
+              <h3 className="text-base font-normal">The Witcher 3</h3>
+              <p className="text-sm text-zinc-400 mt-2">
+                How to get the best sword named “aerodnight” from blood and wine dlc?
+              </p>
             </div>
-          </div>
+          </li>
 
-          <div className="mt-4 pt-4 border-t border-[#2e2e32]">
-            <a href="#" className="flex justify-between ">
-            <span className="text-sm text-white">Log out</span>
-            <span className="material-symbols-outlined ">logout</span>
-            </a>
-          </div>
+          <li className="flex">
+            {/* Square */}
+            <label className="absolute w-6 h-6 border-2 rounded-sm cursor-pointer border-zinc-600 ">
+              <input type="checkbox" className="peer hidden" />
+              <div className="w-full h-full hover:bg-[#27272A] peer-checked:bg-[#E4E4E7] transition"></div>
+            </label>
+            
+            {/* Name game and question */}
+            <div className="flex flex-col text-white ml-10">
+              <h3 className="text-base font-normal">Red Dead Redemption 2</h3>
+              <p className="text-sm text-zinc-400 mt-2">
+               Who is Arthur Morgan from RDR 2?
+              </p>
+            </div>
+          </li>
+
+          <li className="flex">
+            {/* Square */}
+            <label className="absolute w-6 h-6 border-2 rounded-sm cursor-pointer border-zinc-600 ">
+              <input type="checkbox" className="peer hidden" />
+              <div className="w-full h-full hover:bg-[#27272A] peer-checked:bg-[#E4E4E7] transition"></div>
+            </label>
+            
+            {/* Name game and question */}
+            <div className="flex flex-col text-white ml-10">
+              <h3 className="text-base font-normal">GTA VI</h3>
+              <p className="text-sm text-zinc-400 mt-2">
+               Is there any chance CJ came back as playable character on GTA VI?
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div className="flex justify-center">
+          <Button className="cursor-pointer w-full">
+            <Trash/>
+            <p>Clear History</p>
+          </Button>
         </div>
+        
       </aside>
     </div>
   );
