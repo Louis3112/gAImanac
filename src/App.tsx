@@ -83,8 +83,8 @@ const App = () => {
           <div className="flex items-center justify-between">
             <h2 className="text-2xl">AI Chat</h2>
             <div className="flex items-center gap-4">
-              <Button variant={"ghost"} className="cursor-pointer">
-                <Info/>
+              <Button variant={"ghost"} className="cursor-pointer bg-[#27272A]">
+                <Info className="opacity-60"/>
               </Button>
               <Avatar>
                 <AvatarImage src={profilePict} />
@@ -205,7 +205,7 @@ const App = () => {
         </ul>
 
         <div className="flex justify-center">
-          <Button className="cursor-pointer w-full">
+          <Button className="cursor-pointer w-full bg-[#27272A]" variant={"ghost"}>
             <Trash/>
             <p>Clear History</p>
           </Button>
