@@ -1,56 +1,57 @@
-# React + TypeScript + Vite
+# :bangbang: **Software Development Project for 4th Semester**  :bangbang:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  🤖 :iphone: **gAImanac** 🤖 :iphone:
+gAImanac *(prononunced galmanac, not gaymanac)* is an AI Agent designed to assist users in the gaming industry ecosystem (let's just say it is a gaming chatbot AI)
+Derived from the words 'Gaming' and 'Almanac', gAImanac aims to be a reliable source information about gaming news, gaming tips, and other gaming-related content 
 
-- [Notes](./NOTES.md)
+At this stage, gAImanac is still on conseptual design. It is an idea that popped out for our software development project
+In the future, with enough knowledge, resources, and team. We can make this dream come true.
 
-Currently, two official plugins are available:
+Tbh, this is my first time using react.js as a framework. 
+At first, @rayhan889, @pachyyy, and I created gAImanac only by using Figma (https://www.figma.com/design/zOmyobzUCKzkPp2zUuLF9x/UTS-RPL---Chatbot?node-id=0-1&t=mOvA40NX0MpkEbQr-1)
+However, when we saw one of my friend has implemented his project as a full website, we decided to take a serious approach.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Since we only have 2 days left, i barely have time to understand how to use a framework (on this moment, i don't know anything about routes, components, let alone state management)
+So, i I ended up creating the entire main page directly in `App.tsx` -- all at once.
 
-## Expanding the ESLint configuration
+I know this is funny and I can improve it, but i want to save it as a memory.      
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Framework i am using are : 
+1. React.js for website framework
+2. Shadcn/ui for button and avatar component (and yes, i don't know what is component back then). 
+3. Tailwind CSS for CSS 
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The primary color palette i am using are :
+1. #09090B (Zinc - 950)
+2. #18181B (Zinc - 900)
+3. #27272A (Zinc - 800)
+4. #3F3F46 (Zinc - 700)
+5. #52525C (Zinc - 600)
+5. #FFFFFF (White)
+6. #162456 (Blue - 900)
+7. #1447E6 (Blue - 700)
+8. #016630 (Green - 800)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## :arrow_forward: **Installation and Usage** 
+To install this project, please proceed these steps:
+1. Clone the repository: **`git clone https://github.com/Louis3112/gaimanac`**
+2. Navigate to the project directory: **`cd gaimanac`**
+3. Type **`npm i`** to install node_modules
+4. Run **`npm run dev`** to start the development server on localhost
+5. Vite will start the development server and there will be a link **`Local: http://localhost:YOUR_PORT`** -- click it to open the site
+6. Your default browser will open the site automatically
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 	:bust_in_silhouette: **Contributing** :bust_in_silhouette:
+If you'd like to contribute or upgrade the project, it would be my pleasure! :smile: 
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Here's how to to contribute:
+1. Fork the repository
+2. Create a new branch: **`git checkout -b your-branch-name`**
+3. Make your changes
+4. Commit your changes: **`git commit -m "your messages"`** 
+5. Push your changes to your forked repository: **`git push origin your-branch-name`**
+6. Submit a pull request
+
+## :telephone_receiver: **Contact** :telephone_receiver:
+
+If you have any questions or comments about this project, please contact **[me](corneliuslouis3112@gmail.com)**
