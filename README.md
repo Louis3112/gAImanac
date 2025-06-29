@@ -8,7 +8,7 @@ At this stage, gAImanac is still on conseptual design. It is an idea that popped
 In the future, with enough knowledge, resources, and team. We can make this dream come true.
 
 Tbh, this is my first time using react.js as a framework. 
-At first, @rayhan889, @pachyyy, and I created gAImanac only by using Figma (https://www.figma.com/design/zOmyobzUCKzkPp2zUuLF9x/UTS-RPL---Chatbot?node-id=0-1&t=mOvA40NX0MpkEbQr-1)
+At first, @rayhan889, @pachyyy, and I created gAImanac only by using [Figma](https://www.figma.com/design/zOmyobzUCKzkPp2zUuLF9x/UTS-RPL---Chatbot?node-id=0-1&t=mOvA40NX0MpkEbQr-1)
 However, when we saw one of my friend has implemented his project as a full website, we decided to take a serious approach.
 
 Since we only have 2 days left, i barely have time to understand how to use a framework (on this moment, i don't know anything about routes, components, let alone state management)
