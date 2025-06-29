@@ -5,7 +5,7 @@ gAImanac *(prononunced galmanac, not gaymanac)* is an AI Agent designed to assis
 
 Derived from the words 'Gaming' and 'Almanac', gAImanac aims to be a reliable source information about gaming news, gaming tips, and other gaming-related content .
 
-At this stage, gAImanac is still on conseptual design. It is an idea that popped out for our software development project.
+At this stage, gAImanac is still on conseptual design. It is an idea that popped out for our mid-semester project for software development.
 In the future, with enough knowledge, resources, and team. We can make this dream come true.
 
 Tbh, this is my first time using react.js as a framework. 
