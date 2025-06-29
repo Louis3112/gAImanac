@@ -1,18 +1,21 @@
 # :bangbang: **Software Development Project for 4th Semester**  :bangbang:
 
 ##  🤖 :iphone: **gAImanac** 🤖 :iphone:
-gAImanac *(prononunced galmanac, not gaymanac)* is an AI Agent designed to assist users in the gaming industry ecosystem (let's just say it is a gaming chatbot AI)
-Derived from the words 'Gaming' and 'Almanac', gAImanac aims to be a reliable source information about gaming news, gaming tips, and other gaming-related content 
+gAImanac *(prononunced galmanac, not gaymanac)* is an AI Agent designed to assist users in the gaming industry ecosystem (let's just say it is a gaming chatbot AI).
 
-At this stage, gAImanac is still on conseptual design. It is an idea that popped out for our software development project
+Derived from the words 'Gaming' and 'Almanac', gAImanac aims to be a reliable source information about gaming news, gaming tips, and other gaming-related content .
+
+At this stage, gAImanac is still on conseptual design. It is an idea that popped out for our software development project.
 In the future, with enough knowledge, resources, and team. We can make this dream come true.
 
 Tbh, this is my first time using react.js as a framework. 
-At first, @rayhan889, @pachyyy, and I created gAImanac only by using [Figma](https://www.figma.com/design/zOmyobzUCKzkPp2zUuLF9x/UTS-RPL---Chatbot?node-id=0-1&t=mOvA40NX0MpkEbQr-1)
+At first, @rayhan889, @pachyyy, and I created gAImanac only by using [Figma](https://www.figma.com/design/zOmyobzUCKzkPp2zUuLF9x/UTS-RPL---Chatbot?node-id=0-1&t=mOvA40NX0MpkEbQr-1).
+
 However, when we saw one of my friend has implemented his project as a full website, we decided to take a serious approach.
 
-Since we only have 2 days left, i barely have time to understand how to use a framework (on this moment, i don't know anything about routes, components, let alone state management)
-So, i I ended up creating the entire main page directly in `App.tsx` -- all at once.
+Since we only have 2 days left, i barely have time to understand how to use a framework (on this moment, i don't know anything about routes, components, let alone state management).
+
+So, I ended up creating the entire main page directly in `App.tsx` -- all at once.
 
 I know this is funny and I can improve it, but i want to save it as a memory.      
 
